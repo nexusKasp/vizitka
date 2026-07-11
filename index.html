@@ -1,55 +1,64 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Моя визитка</title>
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Моя визитка</title>
 
-  <!-- БАГ №1: стили не подключаются. Проверь имя файла — как он называется на самом деле? -->
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <main class="card">
-    <!-- TODO: замени на свои инициалы или любимое эмодзи -->
-    <div class="avatar">🙂</div>
+    <!-- БАГ №1: стили не подключаются. Проверь имя файла — как он называется на самом деле? -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Баг исправлен, опечатака в слове "styles" -->
+    </head>
+    <body>
+    <main class="card">
+        <!-- TODO: замени на свои инициалы или любимое эмодзи -->
+        <div class="avatar"><img src="img/iAm.jpg" alt="i_am"></div>
 
-    <!-- TODO: впиши своё имя -->
-    <h1 class="name">Имя Фамилия</h1>
+        <!-- TODO: впиши своё имя -->
+        <h1 class="name">Меджидов Магомедсаид</h1>
 
-    <!-- TODO: впиши, кто ты -->
-    <p class="role">Студент 1 курса · будущий фронтендер</p>
+        <!-- TODO: впиши, кто ты -->
+        <p class="role">Студент 1 курса · будущий фронтендер - группа 11-506</p>
 
-    <!-- TODO: пара предложений о себе -->
-    <p class="bio">
-      Здесь коротко о себе: чем занимаешься, что нравится, что хочешь освоить.
-    </p>
+        <!-- TODO: пара предложений о себе -->
+        <p class="bio">
+            В данный момент прокрастенирую, думаю о том что все захватит ИИ
+        </p>
 
-    <h2 class="subtitle">Чем увлекаюсь</h2>
-    <ul class="interests">
-      <!-- TODO: впиши свои увлечения (можно больше трёх) -->
-      <li>Веб-разработка</li>
+        <h2 class="subtitle">Чем увлекаюсь</h2>
+        <ul class="interests">
+        <!-- TODO: впиши свои увлечения (можно больше трёх) -->
+        <li>Веб-разработка</li>
 
-      <!-- БАГ №2: этот пункт списка не отображается как надо. Точно ли это тег списка? -->
-      <il>Музыка</il>
+        <!-- БАГ №2: этот пункт списка не отображается как надо. Точно ли это тег списка? -->
+        <li>Музыка</li>
+        <!-- Баг исправлен , заменил "il" на "li" -->
+        <li>Русифицирую китайский автопром</li>
 
-      <li>Спорт</li>
-    </ul>
+        <li>Спорт - грепплинг</li>
+        </ul>
 
-    <div class="actions">
-      <!-- БАГ №3: id этой кнопки не совпадает с тем, что ищет script.js.
-           Кнопка «Показать контакт» не работает (загляни в консоль браузера — F12). -->
-      <button id="contact-btn" class="btn">Показать контакт</button>
+        <div class="actions">
+        <!-- БАГ №3: id этой кнопки не совпадает с тем, что ищет script.js.
+            Кнопка «Показать контакт» не работает (загляни в консоль браузера — F12). -->
+        <button id="contact-btn" class="btn">Показать контакт</button>
 
-      <button id="theme-btn" class="btn btn-ghost">🌙 Тема</button>
-    </div>
+        <button id="theme-btn" class="btn btn-ghost">🌙 Тема</button>
+        </div>
 
-    <!-- почта спрятана, пока не нажмут кнопку -->
-    <p id="contact" class="contact hidden">
-      <!-- TODO: впиши свою почту -->
-      ✉️ me@example.com
-    </p>
-  </main>
+        <!-- почта спрятана, пока не нажмут кнопку -->
+        <p id="contact" class="contact hidden">
+        <!-- TODO: впиши свою почту -->
+        ✉️ me@example.com
+        </p>
+        <button id="like-btn" class="btn btn-like">
+            <span class="like-icon">❤️</span>
+            <span id="like-count">0</span>
+        </button>
 
-  <script src="script.js"></script>
-</body>
-</html>
+    </main>
+
+    <script src="script.js"></script>
+    </body>
+    </html>
